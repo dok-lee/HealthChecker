@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="atto.recruit.healthChecker.service.RegisterServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-18T04:02:25" hostname="idogyeong-ui-MacBookPro.local" time="0.035">
+  <properties/>
+  <testcase name="join_findAll()" classname="atto.recruit.healthChecker.service.RegisterServiceTest" time="0.035"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
