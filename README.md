@@ -42,7 +42,9 @@ BackEnd 서버에서 UI에서 필요한 정보를 REST API로 제공해야 합�
   - resources/application.properties
    - spring.jpa.hibernate.ddl-auto=**update**
     - 실사용 시 none으로 설정, 각 테이블의 id를 db에서 auto로 할 것.
-   - mariadb username / password는 모두 root.
+   - spring.datasource.username=root
+   - spring.datasource.password=root
+   - spring.datasource.url=jdbc:mariadb://localhost:3306/mysql
   - 각 테이블의 id는 Long이며, insert 시마다 시퀀셜하게 증가함. 혹시라도 Long Max까지 찬다면 리셋하여 사용할 것.
   - 호스트가 모두 연결에 실패할 경우 최대 100초까지 기다려야 연결 상태가 업데이트 될 수 있음.
   - TODO: host 테이블에 값이 있는데 health 테이블에 값이 없는 경우 에러가 발생함.
