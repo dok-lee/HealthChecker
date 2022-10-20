@@ -41,7 +41,7 @@ BackEnd 서버에서 UI에서 필요한 정보를 REST API로 제공해야 합�
 [ 제약 사항 ]
   - resources/application.properties
    - spring.jpa.hibernate.ddl-auto=**update**
-    - 실사용 시 none으로 설정, 각 테이블의 id를 db에서 auto로 할 것.
+    - 실사용 시 none으로 설정, 각 테이블의 id를 db에서 auto로 할 것 (DDLSQL.md 파일 참고).
    - spring.datasource.username=root
    - spring.datasource.password=root
    - spring.datasource.url=jdbc:mariadb://localhost:3306/mysql
