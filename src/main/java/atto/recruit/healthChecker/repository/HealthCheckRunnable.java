@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class HealthCheckRunnable implements Runnable {
 
@@ -34,7 +35,7 @@ public class HealthCheckRunnable implements Runnable {
             try {
                 connectivity = host.getIp().isReachable(1000);
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                connectivity = false;
             }
 
             LocalDateTime rawNowDateTime = LocalDateTime.now();
